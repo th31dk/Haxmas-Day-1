@@ -1,4 +1,4 @@
-import Image from "next/image";
+import type { CSSProperties } from 'react';
 
 type JollyOrpheusClickProps = {
 	onClick: () => void;
@@ -7,7 +7,7 @@ type JollyOrpheusClickProps = {
 export default function JollyOrpheusClick({ onClick }: JollyOrpheusClickProps) {
 	return (
 		<button onClick={onClick}>
-			<Image src="/wreath.png" width={512} height={512} alt="Wreath"/>
+			<img src="/wreath.png" width={512} height={512} alt="Wreath" style={{cursor: 'pointer'}}/>
 		</button>
 	)
 }
